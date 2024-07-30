@@ -1,0 +1,156 @@
+/* Banner */
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 36px;
+    margin-bottom: 64px;
+    color: white;
+    text-align: center;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    gap: 24px;
+    color: white;
+    text-align: center;
+    background: url(/Assets/banner-bg.svg);
+    background-size: cover;
+    object-fit: fill;
+    align-items: center;
+}
+
+#banner-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner-text p {
+    max-width: 50ch;
+}
+
+.bannerbutton {
+    background-color: #fff;
+}
+.bannerbtn{
+    width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .banner {
+        padding: 32px;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .banner-container {
+        padding: 32px;
+        gap: 20px;
+    }
+
+    #banner-text h1 {
+        font-size: 36px;
+    }
+
+    #banner-text p {
+        max-width: 48ch;
+        font-size: 18px;
+    }
+
+    .bannerbutton {
+        width: 70%;
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner {
+        padding: 28px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .banner-container {
+        padding: 28px;
+        gap: 18px;
+    }
+
+    #banner-text h1 {
+        font-size: 32px;
+    }
+
+    #banner-text p {
+        max-width: 45ch;
+        font-size: 16px;
+    }
+
+    .bannerbutton {
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        padding: 24px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .banner-container {
+        padding: 24px;
+        gap: 16px;
+    }
+
+    #banner-text h1 {
+        font-size: 28px;
+    }
+
+    #banner-text p {
+        max-width: 40ch;
+        font-size: 14px;
+    }
+
+    .bannerbutton {
+        width: 90%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 20px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .banner-container {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    #banner-text h1 {
+        font-size: 24px;
+    }
+
+    #banner-text p {
+        max-width: 35ch;
+        font-size: 12px;
+    }
+
+    .bannerbutton {
+        width: 100%;
+        padding: 8px;
+        font-size: 12px;
+    }
+}

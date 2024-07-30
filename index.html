@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        referrerpolicy="no-referrer" />
+
+    <!-- CSSLinks -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="hero-section.css">
+    <link rel="stylesheet" href="product-section.css">
+    <link rel="stylesheet" href="newscard-section.css">
+    <link rel="stylesheet" href="feature-section.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="privacy-section.css">
+    <link rel="stylesheet" href="footer-section.css">
+    <link rel="stylesheet" href="infinite-scroll.css">
+
+</head>
+
+<body>
+
+    <!-- Hero-Section  -->
+    <nav id="nav-bar">
+        <div class="logo">
+            <img src="/Assets/Navbar Brand.svg" alt="logo" loading="lazy">
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+
+        <button class="btn">Get a Demo</button>
+
+        <!-- Hamburger Menu -->
+        <label class="burger" for="burger">
+            <input type="checkbox" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </nav>
+
+    <section class="herosection" id="hero-page">
+        <img src="Assets/hero-blur-1.svg" alt="heroblur" class="hero-blur" id="hero-blur-1">
+        <img src="Assets/hero-blur-2.svg" alt="heroblur" class="hero-blur" id="hero-blur-2">
+        <div class="hero-content">
+            <div id="hero-text">
+                <h1>A CRM dashboard for engineering teams</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum veritatis magni recusandae dicta
+                    at ipsa, laboriosam neque quisquam voluptatibus porro.</p>
+            </div>
+            <div class="btn-group">
+                <button class="btn">Get a Demo</button>
+                <button class="btn" id="no-fill">View Pricing</button>
+            </div>
+            <img src="/Assets/hero-image.svg" alt="hero-img" class="hero-image" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Infinitescrol  -->
+
+    <section class="infinitescroll">
+        <div id="hero-text">
+            <h1>Our Patners</h1>
+        </div>
+        <div class="marquee marquee--8 marquee--right-to-left">
+            <img class="marquee__item" loading="lazy" src="/Assets/amazon logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/googleplus logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/linkedin-plain-wordmark logo.svg" width="100"
+                height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/metallb-horizontal-white logo.svg" width="100"
+                height="100" alt="">
+
+            <img class="marquee__item" loading="lazy" src="/Assets/apple.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/microsoft logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/metallb-horizontal-white logo.svg" width="100"
+                height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/instagram.svg" width="100" height="100" alt="">
+
+        </div>
+        <div class="marquee marquee--8 marquee--left-to-right">
+            <img class="marquee__item" loading="lazy" src="/Assets/metallb-horizontal-white logo.svg" width="100"
+                height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/amazon logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/linkedin-plain-wordmark logo.svg" width="100"
+                height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/apple.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/metallb-horizontal-white logo.svg" width="100"
+                height="100" alt="">
+
+            <img class="marquee__item" loading="lazy" src="/Assets/microsoft logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/googleplus logo.svg" width="100" height="100" alt="">
+            <img class="marquee__item" loading="lazy" src="/Assets/instagram.svg" width="100" height="100" alt="">
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Product-Section  -->
+    <section class="productsection" id="product-page">
+        <div class="product-content">
+            <div id="product-text">
+                <h1>Powerful features to help you manage all your leads</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum veritatis magni</p>
+            </div>
+        </div>
+
+        <div class="content-grid">
+            <div class="product-card">
+                <img src="/Assets/icon-1.svg" alt="icon-1" loading="lazy">
+                <div class="card-text">
+                    <h3>User Information</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/icon-2.svg" alt="icon-2" loading="lazy">
+                <div class="card-text">
+                    <h3>Deal Tracking</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./Assets/icon-3.svg" alt="icon-3" loading="lazy">
+                <div class="card-text">
+                    <h3>PipeLine Management</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/icon-4.svg" alt="icon-4" loading="lazy">
+                <div class="card-text">
+                    <h3>Reporting Dashboard</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/icon-5.svg" alt="icon-5" loading="lazy">
+                <div class="card-text">
+                    <h3>Meeting Scheduling</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/icon-6.svg" alt="icon-6" loading="lazy">
+                <div class="card-text">
+                    <h3>Email Tracking</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Privacy Section  -->
+
+    <section class="privacy feature-section">
+        <div class="privacy-text">
+            <div id="privacycard-text">
+                <h1>Essential apps that protect your</h1>
+                <div class="logotext">
+                    <span class="logoandtext">
+                        <img src="/Assets/privacyIcon-1.svg" alt="privacy-img">
+                        <h2>Email,</h2>
+                    </span>
+                    <span class="logoandtext">
+                        <img src="/Assets/privacyIcon-2.svg" alt="privacy-img">
+                        <h2>Events,</h2>
+                    </span>
+                    <span class="logoandtext">
+                        <img src="/Assets/privacyIcon-3.svg" alt="privacy-img">
+                        <h2>Files,</h2>
+                    </span>
+                    <span class="logoandtext">
+                        <img src="/Assets/privacyIcon-4.svg" id="privacy-doc" alt="privacy-img">
+                        <h2>Documents</h2>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="privacy-grid">
+            <div class="product-card privacygrid-card" id="privacy-card-1">
+                <img src="Assets/mobileappblur.svg" alt="" class="endblur" id="endblur-1">
+                <img src="Assets/mobileappblur2.svg" alt="" class="endblur" id="endblur-2">
+                <div class="card-text">
+                    <h3>End-to-end encrypted inbox and messages</h3>
+                    <p>Rorem ipsum dolor sit amet consectetur. Proin dignissim tortor mauris viverra sed volutpat
+                        mauris. Amet nisi amet commodo adipiscing ut imperdiet nunc.</p>
+                    <div class="privacy-btn">
+                        <button class="btn" id="no-fill">View Pricing</button>
+                    </div>
+                </div>
+                <img src="/Assets/privacycard-3.svg" alt="icon-5" loading="lazy">
+            </div>
+            <div class="product-card privacygrid-card feature-card" id="privacy-card-3">
+                <img src="/Assets/privacycard-1.svg" alt="icon-5" loading="lazy">
+                <img src="/Assets/mobileappblur.svg" alt="blur-1" class="mobileblur" id="mobileblur-1">
+                <img src="/Assets/mobileappblur2.svg" alt="blur-1" class="mobileblur" id="mobileblur-2">
+
+                <div class="card-text">
+                    <h3>Mobile Applications</h3>
+                    <p>Prem ipsum dolor sit amet consectetur. Viverra sed dignissim risus aliquet condimentum. Vulputate
+                        varius feugiat egestas congue.</p>
+                </div>
+
+            </div>
+
+            <div class="product-card privacygrid-card feature-card" id="privacy-card-2">
+                <img src="./Assets/mobileappblur.svg" alt="blur-1" class="uploadblur" id="uploadblur-1">
+
+                <div class="card-text">
+                    <h3>Upload, share, and preview any file</h3>
+                    <p>Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula massa netus nulla ultricies purus.
+                    </p>
+                </div>
+                <img src="./Assets/privacycard-2.svg" alt="icon-5" loading="lazy" id="featurecard-2-mail">
+            </div>
+        </div>
+
+        <div class="btn-group privacy-btn">
+            <button class="btn">Get Started</button>
+            <button class="btn" id="no-fill">Browse All Features</button>
+        </div>
+
+    </section>
+
+
+    <!-- Feature-Section  -->
+
+    <section class="feature-section">
+        <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-1">
+        <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-2">
+        <div class="privacy-grid">
+            <div class="product-card privacygrid-card" id="privacy-card-1" style="border: none;">
+                <div class="feature-textbtn">
+                    <div id="feature-text">
+                        <h1>Transparent, audited, &open source</h1>
+                        <p>Torem ipsum dolor sit amet consectetur. Nulla quisque scelerisque eget quis. Eu amet amet eu
+                            interdum.</p>
+                    </div>
+                    <div class="featurebtn">
+                        <button class="btn" id="no-fill">Browse all Features</button>
+                    </div>
+                </div>
+                <img src="/Assets/feature-img-1.svg" alt="icon-5" id="feature-card-1-img" loading="lazy">
+            </div>
+
+            <div class="product-card privacygrid-card" id="privacy-card-3" style="background-color: #060B27;">
+                <div class="card-text">
+                    <h3>Product Mail</h3>
+                    <p>Prem ipsum dolor sit amet consectetur. Viverra sed dignissim risus aliquet condimentum. Vulputate
+                        varius feugiat egestas congue.</p>
+                </div>
+                <img src="/Assets/feature-img-2.svg" alt="icon-5" id="feature-img-2" loading="lazy">
+            </div>
+
+            <div class="product-card privacygrid-card" id="privacy-card-2" style="background-color: #060B27;">
+                <div class="card-text">
+                    <h3>Product UI</h3>
+                    <p>Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula massa netus nulla ultricies purus.
+                    </p>
+                </div>
+                <img src="/Assets/feature-img-3.svg" alt="icon-5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- NewsCard Section  -->
+
+    <section class="newscard-section">
+        <div id="product-text">
+            <h1>Product in the news</h1>
+            <button class="btn">Browse all News</button>
+        </div>
+
+        <div class="newscard-grid">
+            <div class="product-card">
+                <img src="/Assets/card-img-1.svg" alt="card-1" class="newscard-img" loading="lazy">
+                <div class="card-text">
+                    <h3>Product Mail is taking on Gmail by betting on privacy</h3>
+                    <p>Dorttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit
+                        urna.</p>
+                </div>
+                <div class="line"></div>
+                <div class="date">
+                    <p>June 30, 2024</p>
+                    <p id="link">View More</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/Assets/card-img-2.svg" alt="card-2" class="newscard-img" loading="lazy">
+                <div class="card-text">
+                    <h3>Wants You To Sign Out Of Google Workspace Forever</h3>
+                    <p>Dorttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit
+                        urna.</p>
+                </div>
+                <div class="line"></div>
+                <div class="date">
+                    <p>June 30, 2024</p>
+                    <p id="link">View More</p>
+                </div>
+            </div>
+            <div class="product-card" id="newscard-3">
+                <img src="/Assets/card-img-3.svg" alt="card-3" class="newscard-img" loading="lazy">
+                <div class="card-text">
+                    <h3>The Best Email Encryption Services for 2023</h3>
+                    <p>Dorttitor mattis pharetra sit id viverra. Vivamus mauris augue pharetra cras turpis faucibus elit
+                        urna.</p>
+                </div>
+                <div class="line"></div>
+                <div class="date">
+                    <p>June 30, 2024</p>
+                    <p id="link">View More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner  -->
+    <section class="banner">
+        <div class="banner-container">
+            <div class="logo">
+                <img src="/Assets/banner-logo.svg" alt="logo">
+            </div>
+            <div id="banner-text">
+                <h1>Join the Community</h1>
+                <p>Join our 400,000+ person community and contribute to a more private and decentralized internet. Start
+                    for
+                    free.</p>
+            </div>
+            <div class="bannerbtn">
+                <button class="btn bannerbutton" id="no-fill" style=" background: #5865F2;">Join Discord</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section  -->
+    <footer>
+        <div class="logo">
+            <img src="/Assets/Navbar Brand.svg" alt="logo" loading="lazy">
+        </div>
+        <div class="footer-section-body">
+            <img id="footerblur" src="/Assets/footer-blur.svg" alt="footer-blur">
+            <div class="product-card subscribe-card">
+                <div class="card-text">
+                    <h3>Subscribe to Our NewsLetter</h3>
+                    <input type="email" name="email" id="Subscribe-email" placeholder="Enter your Email">
+                    <button class="btn">Subscribe</button>
+
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                    <li>Pricing</li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <ul>
+                    <li>Features</li>
+                    <li>Careers</li>
+                    <li>Request a Demo</li>
+                    <li>Login</li>
+                    <li>Sign Up</li>
+                </ul>
+            </div>
+            <div class="footer-text">
+                <ul>
+                    <li>Style Guide</li>
+                    <li>Password Protected</li>
+                    <li>404 Not found</li>
+                    <li>Licences</li>
+                    <li>Changelog</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="copy-right-section">
+            <p>Copyright © Product | Designed by JayanthCT LTD - Powered by Figma</p>
+
+            <div class="social-media">
+
+                <i class="ri-facebook-fill social-icon"></i>
+                <i class="ri-instagram-fill social-icon"></i>
+                <i class="ri-twitter-fill social-icon"></i>
+                <i class="ri-mail-fill social-icon"></i>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.getElementById('burger').addEventListener('change', function () {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

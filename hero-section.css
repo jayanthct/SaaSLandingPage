@@ -1,0 +1,154 @@
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 32px;
+    margin-top: 120px;
+    margin-bottom: 48px;
+    text-align: center;
+    position: relative;
+}
+
+.herosection {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-blur {
+    position: absolute;
+    width: 100%;
+}
+
+#hero-blur-1 {
+
+    top: 0;
+    left: 0;
+    z-index: -12;
+}
+
+#hero-blur-2 {
+    z-index: -15;
+
+    bottom: 0;
+    right: 0;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#hero-text h1 {
+    font-size: 42px;
+    background: linear-gradient(180deg, #F6F6F7 0%, #7E808F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#hero-text p {
+    max-width: 72ch;
+    color: #8f9bb7;
+}
+
+.btn-group {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn-group #no-fill {
+    border: 1.2px solid #444960;
+    background: linear-gradient(261deg, rgba(21, 25, 52, 0.52) 14.6%, rgba(21, 25, 52, 0.08) 49.66%, rgba(21, 25, 52, 0.49) 87.77%);
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Tablet Portrait and Landscape */
+@media (max-width: 1024px) {
+    .hero-content {
+        margin-top: 120px;
+        gap: 24px;
+    }
+
+    #hero-text h1 {
+        font-size: 36px;
+    }
+
+    #hero-text p {
+        max-width: 60ch;
+
+    }
+
+    .btn-group {
+        gap: 20px;
+    }
+
+    .btn-group .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) and (orientation: portrait) {
+    .hero-content {
+        margin-top: 100px;
+        gap: 20px;
+    }
+
+    #hero-text h1 {
+        font-size: 32px;
+    }
+
+    #hero-text p {
+        max-width: 50ch;
+        font-size: 16px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn-group .btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-width: 812px) and (orientation: landscape) {
+    .hero-content {
+        margin-top: 120px;
+        gap: 24px;
+    }
+
+    #hero-text h1 {
+        font-size: 30px;
+    }
+
+    #hero-text p {
+        max-width: 60ch;
+        font-size: xx-small;
+    }
+
+    .btn-group {
+        gap: 16px;
+    }
+
+    .btn-group .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

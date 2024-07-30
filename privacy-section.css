@@ -1,0 +1,238 @@
+/* Privacy Section */
+.privacy {
+    background-color: #060B27;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    padding: 36px;
+}
+
+.privacy-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#privacycard-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+#privacycard-text h1 {
+    font-size: 36px;
+    background: linear-gradient(180deg, #F6F6F7 0%, #7E808F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#privacy-card-1 {
+    position: relative;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.endblur {
+    position: absolute;
+    width: 100%;
+}
+
+#endblur-2 {
+    top: 0;
+    right: 0;
+}
+
+#endblur-1 {
+    bottom: 0;
+    left: 0;
+}
+
+#privacy-card-2 {
+    position: relative;
+}
+
+.uploadblur {
+    position: absolute;
+}
+
+#uploadblur-1 {
+    transform: rotate(180deg);
+    bottom: 0;
+    right: 0;
+}
+
+.logotext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.logotext img {
+    width: 20%;
+}
+
+#privacy-doc {
+    width: 10%;
+}
+
+.logoandtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.logoandtext h2 {
+    background: linear-gradient(180deg, #F6F6F7 0%, #7E808F 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* GridPrivacy */
+.privacy-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+}
+
+.privacygrid-card {
+    align-items: center;
+    justify-content: center;
+    background-color: #0E1330;
+    padding: 24px;
+}
+
+.privacygrid-card img {
+    width: 50%;
+    height: 100%;
+}
+
+#privacy-card-1 {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#privacy-card-1 img {
+    width: 50%;
+    height: 100%;
+}
+
+#privacy-card-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+#privacy-card-1 .card-text h3 {
+    font-size: 24px;
+}
+
+#privacy-card-1 .card-text p {
+    max-width: 72ch;
+}
+
+.privacy-btn {
+    justify-content: center;
+    width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .privacy-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 12px;
+    }
+
+    #privacy-card-1 {
+        grid-area: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #privacy-card-1 .card-text {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .privacy {
+        padding: 16px;
+    }
+
+    .logotext {
+        gap: 16px;
+    }
+
+    #privacycard-text h1 {
+        font-size: 28px;
+    }
+
+    .privacy-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 8px;
+    }
+
+    .privacygrid-card {
+        padding: 16px;
+    }
+
+    #privacy-card-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #privacy-card-1 .card-text {
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .privacy {
+        padding: 8px;
+        gap: 12px;
+    }
+
+    .logotext {
+        gap: 12px;
+    }
+
+    #privacycard-text h1 {
+        font-size: 24px;
+    }
+
+    .privacy-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 4px;
+    }
+
+    .privacygrid-card {
+        padding: 12px;
+    }
+
+    #privacy-card-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #privacy-card-1 .card-text {
+        align-items: center;
+    }
+}

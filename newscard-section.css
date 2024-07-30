@@ -1,0 +1,109 @@
+.newscard-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 36px;
+    padding-right: 36px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.newscard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newscard-img {
+    width: 100%;
+}
+
+.product-card .line {
+    width: 100%;
+    height: 0.5px;
+    background-color: rgba(187, 187, 187, 0.312);
+}
+
+.date {
+    display: flex;
+    font-size: smaller;
+    width: 100%;
+    color: #b2b8c4;
+    justify-content: space-between;
+}
+
+.date #link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+
+/* For tablets (landscape orientation, width 768px and below) */
+@media (max-width: 1024px) {
+    .newscard-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .newscard-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 12px;
+    }
+
+    #newscard-3{
+        grid-area: 2/1/2/3;
+    }
+
+    
+
+    .product-card {
+        transform: scale(0.95);
+    }
+}
+
+/* For tablets (portrait orientation, width 768px and below) */
+@media (max-width: 768px) {
+    .newscard-section {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .newscard-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+    }
+
+    #newscard-3{
+        grid-area: 3/1/3/1;
+    }
+
+    .product-card {
+        transform: scale(0.9);
+    }
+}
+
+/* For mobile devices (width 480px and below) */
+@media (max-width: 480px) {
+    .newscard-section {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        gap: 12px;
+    }
+
+    .newscard-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 4px;
+    }
+
+    .product-card {
+        transform: scale(0.85);
+    }
+}
