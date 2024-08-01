@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Product.io</title>
+    <link rel="icon" type="image/x-icon" href="Assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -37,17 +38,16 @@
 
         <div class="nav-list">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Blog</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#product-page">About</a></li>
+                <li><a href="#feature-section">Features</a></li>
+                <li><a href="#newscard-section">News</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </div>
 
         <button class="btn">Get a Demo</button>
 
-        <!-- Hamburger Menu -->
         <label class="burger" for="burger">
             <input type="checkbox" id="burger">
             <span></span>
@@ -172,7 +172,7 @@
 
     <!-- Privacy Section  -->
 
-    <section class="privacy feature-section">
+    <section class="privacy feature-section" id="privacy-section">
         <div class="privacy-text">
             <div id="privacycard-text">
                 <h1>Essential apps that protect your</h1>
@@ -248,9 +248,9 @@
 
     <!-- Feature-Section  -->
 
-    <section class="feature-section">
-        <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-1">
-        <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-2">
+    <section class="feature-section" id="feature-section">
+        <!-- <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-1"> -->
+        <!-- <img src="Assets/featureblurtotal.svg" alt="" class="featureblurtotal" id="featureblurtotal-2"> -->
         <div class="privacy-grid">
             <div class="product-card privacygrid-card" id="privacy-card-1" style="border: none;">
                 <div class="feature-textbtn">
@@ -281,7 +281,7 @@
                     <p>Tellus et adipiscing sit sit mauris pharetra bibendum. Ligula massa netus nulla ultricies purus.
                     </p>
                 </div>
-                <img src="Assets/feature-img-3.svg" alt="icon-5" loading="lazy">
+                <img src="Assets/feature-img-3.svg" id="feature-img-3" alt="icon-5" loading="lazy">
             </div>
         </div>
     </section>
@@ -291,7 +291,7 @@
 
     <!-- NewsCard Section  -->
 
-    <section class="newscard-section">
+    <section class="newscard-section" id="newscard-section">
         <div id="product-text">
             <h1>Product in the news</h1>
             <button class="btn">Browse all News</button>
@@ -341,7 +341,7 @@
     </section>
 
     <!-- Banner  -->
-    <section class="banner">
+    <section class="banner" id="banner">
         <div class="banner-container">
             <div class="logo">
                 <img src="Assets/banner-logo.svg" alt="logo">
@@ -359,7 +359,7 @@
     </section>
 
     <!-- Footer Section  -->
-    <footer>
+    <footer id="footer">
         <div class="logo">
             <img src="Assets/Navbar Brand.svg" alt="logo" loading="lazy">
         </div>
@@ -423,6 +423,7 @@
         document.getElementById('burger').addEventListener('change', function () {
             document.querySelector('.nav-list').classList.toggle('active');
         });
+
     </script>
 </body>
 
