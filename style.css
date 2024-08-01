@@ -14,7 +14,8 @@ html {
     background: #060B27;
     margin-left: 10%;
     margin-right: 10%;
-   min-width: 360px;
+    min-width: 360px;
+    scroll-behavior: smooth;
 }
 
 body {
