@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    width: 100%;
+ 
     padding: 16px;
     padding-left: 10%;
     padding-right: 10%;
@@ -17,8 +17,6 @@
     left: 0;
     right: 0;
     z-index: 100;
-
-    min-width: 400px;
 }
 
 #nav-bar .logo {
