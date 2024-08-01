@@ -1,3 +1,38 @@
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 /* Privacy Section */
 .privacy {
     background-color: #060B27;
@@ -5,8 +40,14 @@
     align-items: center;
     margin-top: 0;
     padding: 36px;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
-
+#privacy-card-1 {
+    flex-direction: row;
+    justify-content: space-between;
+}
 .privacy-text {
     display: flex;
     flex-direction: column;
@@ -14,6 +55,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: slideUp 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #privacycard-text {
@@ -22,6 +66,9 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    animation: zoomIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #privacycard-text h1 {
@@ -35,11 +82,17 @@
 #privacy-card-1 {
     position: relative;
     grid-area: 1 / 1 / 2 / 3;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .endblur {
     position: absolute;
     width: 100%;
+    animation: slideUp 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #endblur-2 {
@@ -51,13 +104,24 @@
     bottom: 0;
     left: 0;
 }
+#privacy-card-2 img {
+    width: 100%;
+    height: 100%;
+}
+
 
 #privacy-card-2 {
     position: relative;
+    animation: slideUp 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .uploadblur {
     position: absolute;
+    animation: slideUp 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #uploadblur-1 {
@@ -72,14 +136,23 @@
     align-items: center;
     gap: 32px;
     flex-wrap: wrap;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .logotext img {
     width: 20%;
+    animation: zoomIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #privacy-doc {
     width: 10%;
+    animation: zoomIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .logoandtext {
@@ -88,6 +161,9 @@
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .logoandtext h2 {
@@ -110,39 +186,17 @@
     justify-content: center;
     background-color: #0E1330;
     padding: 24px;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .privacygrid-card img {
     width: 50%;
     height: 100%;
-}
-
-#privacy-card-1 {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#privacy-card-1 img {
-    width: 50%;
-    height: 100%;
-}
-
-#privacy-card-2 img {
-    width: 100%;
-    height: 100%;
-}
-
-#privacy-card-1 .card-text h3 {
-    font-size: 24px;
-}
-
-#privacy-card-1 .card-text p {
-    max-width: 72ch;
-}
-
-.privacy-btn {
-    justify-content: center;
-    width: 50%;
+    animation: zoomIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* Responsive Design */
