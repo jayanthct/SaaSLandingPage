@@ -1,3 +1,62 @@
+/* Keyframes for different animations */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Applying animations to the first, second, and third items */
+.newscard-grid>div:nth-child(1) {
+    animation: slideInLeft 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.newscard-grid>div:nth-child(3) {
+    animation: slideInRight 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.newscard-grid>div:nth-child(2) {
+    animation: scaleIn 1.2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+
+
 .newscard-section {
     display: flex;
     flex-direction: column;
@@ -40,10 +99,16 @@
     cursor: pointer;
 }
 
-/* Responsive styles */
-
-/* For tablets (landscape orientation, width 768px and below) */
 @media (max-width: 1024px) {
+
+    .newscard-grid>div:nth-child(1),
+    .newscard-grid>div:nth-child(2),
+    .newscard-grid>div:nth-child(3) {
+        animation: slideInLeft 1.2s ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
     .newscard-section {
         padding-left: 20px;
         padding-right: 20px;
@@ -54,11 +119,11 @@
         grid-gap: 12px;
     }
 
-    #newscard-3{
+    #newscard-3 {
         grid-area: 2/1/2/3;
     }
 
-    
+
 
     .product-card {
         transform: scale(0.95);
@@ -67,6 +132,15 @@
 
 /* For tablets (portrait orientation, width 768px and below) */
 @media (max-width: 768px) {
+
+    .newscard-grid>div:nth-child(1),
+    .newscard-grid>div:nth-child(2),
+    .newscard-grid>div:nth-child(3) {
+        animation: slideInLeft 1.2s ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
     .newscard-section {
         padding-left: 16px;
         padding-right: 16px;
@@ -79,7 +153,7 @@
         grid-gap: 8px;
     }
 
-    #newscard-3{
+    #newscard-3 {
         grid-area: 3/1/3/1;
     }
 
@@ -105,5 +179,13 @@
 
     .product-card {
         transform: scale(0.85);
+    }
+
+    .newscard-grid>div:nth-child(1),
+    .newscard-grid>div:nth-child(2),
+    .newscard-grid>div:nth-child(3) {
+        animation: slideInLeft 1.2s ease-in-out forwards;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
     }
 }
