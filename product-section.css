@@ -1,4 +1,76 @@
-/* product section */
+/* Keyframes for animations */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Applying animations to grid items */
+.content-grid > div:nth-child(1) {
+    animation: slideInFromLeft 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.content-grid > div:nth-child(2) {
+    animation: slideInFromRight 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.content-grid > div:nth-child(3) {
+    animation: scaleIn 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Additional items animations */
+.content-grid > div:nth-child(4) {
+    animation: slideInFromLeft 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.content-grid > div:nth-child(5) {
+    animation: slideInFromRight 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.content-grid > div:nth-child(6) {
+    animation: scaleIn 1.2s ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+/* Product Section */
 .productsection {
     display: flex;
     flex-direction: column;
@@ -42,7 +114,7 @@
     color: #8f9bb7;
 }
 
-/* content-grid */
+/* Content Grid */
 .content-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
